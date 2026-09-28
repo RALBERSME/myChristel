@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>myChristel</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="login-container">
+        <h2>Geschützter Bereich</h2>
+        <p>↠ Bitte geben Sie das korrekte Codewort ein, um fortzufahren:</p>
+
+        <form id="codeForm">
+          <input
+            type="text"
+            id="codeInput"
+            placeholder="Codewort eingeben..."
+            autocomplete="off"
+          />
+          <button type="submit">↠ Freischalten</button>
+        </form>
+
+        <p id="errorMessage" class="error-message"></p>
+      </div>
+
+      <script src="main.js"></script>
+    </div>
+  </body>
+</html>

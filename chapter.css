@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  background-image: url(Images/daisy.gif);
+  background-position: -30% 100%;
+}
+.container {
+  margin: 15px 10px;
+  padding: 15px;
+  font-size: 0.9rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  position: relative;
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(241, 223, 244, 0.95),
+    rgb(236, 218, 159)
+  );
+  border-radius: 10px;
+
+  box-shadow: 2px 2px 2px 3px rgb(236, 218, 159);
+}
+
+h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.8rem;
+  word-wrap: break-word;
+}
+h3 {
+  text-align: justify;
+  hyphens: auto;
+}
+hr {
+  border: none;
+  border-top: 3px dotted black;
+  width: 30%;
+  margin-left: 35%;
+}
+
+a {
+  margin: 15px 0;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 900;
+  color: #f4f405;
+  background-color: rgb(109, 12, 98);
+  padding: 12px 20px;
+  border: 2px solid #383737;
+  max-width: 100%;
+  box-sizing: border-box;
+  border-radius: 40px;
+  text-align: center;
+}
+a:hover {
+  background-color: #f4f405;
+  color: black;
+}
+
+a * {
+  display: inline-block;
+}
+.jump {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 5px;
+}
+.jump a {
+  padding: 8px 12px;
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+}
+
+.up a {
+  padding: 8px 12px;
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+button {
+  padding: 8px 12px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 7.5px;
+  cursor: pointer;
+  margin-right: 10px;
+  box-shadow: 2px 4px 2px 2px rgba(0, 0, 0, 0.6);
+  transition: background-color 0.2s;
+  transform: scale(1);
+}
+.button:hover {
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.6);
+}
+.btn-start {
+  background-color: #1ee571;
+  color: white;
+}
+.btn-start:hover {
+  background-color: #27ae60;
+}
+.btn-stop {
+  background-color: #d00765;
+  color: white;
+}
+.btn-stop:hover {
+  background-color: #860541;
+}
+.containerBtn {
+  max-width: 400px;
+  padding: 200px auto;
+}
+@media (min-width: 768px) {
+  .container {
+    margin: 5% 30%;
+    padding: 3.5%;
+    font-size: 1.2rem;
+    border-width: 5px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  hr {
+    border-top-width: 5px;
+  }
+
+  a {
+    text-align: center;
+  }
+  .jump {
+    display: flex;
+    flex-direction: row;
+  }
+  .jump a,
+  .up a {
+    padding: 5px 10px;
+  }
+}
